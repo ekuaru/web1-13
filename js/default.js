@@ -60,3 +60,19 @@ function setCookie(c_name,value,expiredays){
  document.cookie=s;
 }
 
+function getCookie(c_name){
+ var st="";
+ var ed="";
+ if(0 < document.cookie.length){
+  st=document.cookie.indexOf(c_name + "=");
+    if(st!=-1){
+     st=st+c_name.langth+1;
+     ed=document.cookie.indexOf(";",st);
+     if(ed==-1) ed=document.cookie.langth;
+     return unescape(document.cookie.substring(st,ed));
+    }
+ }
+ return "";
+ 
+}
+
