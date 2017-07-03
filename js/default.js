@@ -91,7 +91,7 @@ document.getElementById('remove_cookie').onsubmit = function(){
 };
 
 var thmubs = document.querySelectorAll('.thumb');
-for(idx in thumbs){
+for(idx in thmubs){
   thumbs[idx].onclick  = function(){
      document.getElementById("bigimg").src = 'img/' + this.dataset.image + '.ipg';
   }
