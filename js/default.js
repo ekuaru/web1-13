@@ -93,6 +93,6 @@ document.getElementById('remove_cookie').onsubmit = function(){
 var thmubs = document.querySelectorAll('.thumb');
 for(idx in thmubs){
   thmubs[idx].onclick  = function(){
-     document.getElementById("bigimg").src = 'img/' + this.dataset.image + '.ipg';
+     document.getElementById("bigimg").src = 'img/' + this.dataset.image + '.JPG';
   }
 }
